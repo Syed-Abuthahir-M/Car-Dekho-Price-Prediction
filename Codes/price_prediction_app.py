@@ -86,16 +86,16 @@ st.markdown("""
 st.markdown("<div class='title-text'>🚗 Car Price Prediction App</div>", unsafe_allow_html=True)
 
 # Load model and encoders
-with open(r"F:\GUVI\Project\models\random_forest_model.pkl", 'rb') as m:
+with open(r"F:\GUVI\Project\models\Car_Dekho models\random_forest_model.pkl", 'rb') as m:
     rfr = pickle.load(m)
 
-with open(r"F:\GUVI\Project\models\minmax_scaler_features.pkl", 'rb') as f:
+with open(r"F:\GUVI\Project\models\Car_Dekho models\minmax_scaler_features.pkl", 'rb') as f:
     mm_features = pickle.load(f)
 
-with open(r"F:\GUVI\Project\models\minmax_scaler_price.pkl", 'rb') as p:
+with open(r"F:\GUVI\Project\models\Car_Dekho models\minmax_scaler_price.pkl", 'rb') as p:
     mm_price = pickle.load(p)
 
-with open(r"F:\GUVI\Project\models\label_encoders.pkl", 'rb') as le_file:
+with open(r"F:\GUVI\Project\models\Car_Dekho models\label_encoders.pkl", 'rb') as le_file:
     label_encoders = pickle.load(le_file)
 
 # Layout using 2 columns for better organization
